@@ -1154,11 +1154,13 @@ dependencies = [
     { name = "jupyter" },
     { name = "minsearch" },
     { name = "openai" },
+    { name = "pandas" },
     { name = "python-dotenv" },
     { name = "requests" },
     { name = "sentence-transformers" },
     { name = "sqlitesearch" },
     { name = "toyaikit" },
+    { name = "tqdm" },
 ]
 
 [package.metadata]
@@ -1167,11 +1169,13 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "minsearch", specifier = ">=0.1.1" },
     { name = "openai", specifier = ">=2.43.0" },
+    { name = "pandas", specifier = ">=3.0.3" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "requests", specifier = ">=2.34.2" },
     { name = "sentence-transformers", specifier = ">=5.6.0" },
     { name = "sqlitesearch", specifier = ">=0.1.2" },
     { name = "toyaikit", specifier = ">=0.0.11" },
+    { name = "tqdm", specifier = ">=4.68.3" },
 ]
 
 [[package]]
