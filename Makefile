@@ -9,7 +9,7 @@ chat:
 network:
 	docker network create monitoring
 
-postgres: network
+postgres: 
 	docker run -it \
 		--name course-assistant-pg \
 		--network monitoring \
@@ -33,6 +33,15 @@ pgadmin:
     --network monitoring \
     --name pgadmin \
     dpage/pgadmin4:8.1
+
+grafana:
+	docker run -d \
+    --name grafana \
+    --network monitoring \
+    -p 3000:3000 \
+    -v grafana_data:/var/lib/grafana \
+    grafana/grafana
+
 
 query:
 	uv run python db_query.py
